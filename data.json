@@ -1,0 +1,102 @@
+[
+  {
+    "tr": "2 Kisilik Turk Kahvaltisi",
+    "en": "Turkish Breakfast for 2 Persons",
+    "price": "₺90",
+    "image": "Turkish-Breakfast-for-2-Persons.png"
+  },
+  {
+    "tr": "Ingiliz Kahvaltisi",
+    "en": "English Breakfast",
+    "price": "₺100",
+    "image": "English-Breakfast.png"
+  },
+  {
+    "tr": "Tavuklu Wrap",
+    "en": "Chicken Wrap",
+    "price": "₺100",
+    "image": "Chicken-Wrap.png"
+
+  },
+  {
+    "tr": "Karışık Kumru",
+    "en": "Mixed Kumru",
+    "price": "₺100",
+    "image": "Mixed-Kumru.png"
+
+  },
+  {
+    "tr": "Karışık Pizza",
+    "en": "Mixed-Pizza",
+    "price": "₺100",
+    "image": "Mixed-Pizza.png"
+
+  },
+  {
+    "tr": "Omlet Çeşitleri",
+    "en": "Omelet Varieties",
+    "price": "₺100",
+    "image": "Omelet-Varieties.png"
+
+  },
+  {
+    "tr": "Domuz Sosis",
+    "en": "Pork Sausage",
+    "price": "₺100",
+    "image": "Pork-Sausage.png"
+
+  },
+  {
+    "tr": "Tost Çeşitleri",
+    "en": "Toast Varieties",
+    "price": "₺100",
+    "image": "Toast-Varieties.png"
+
+  },
+  {
+    "tr": "Domates Çorbası",
+    "en": "Tomato Soup",
+    "price": "₺100",
+    "image": "Tomato-Soup.png"
+
+  },
+  {
+    "tr": "Mantı",
+    "en": "Turkish Ravioli",
+    "price": "₺100",
+    "image": "Turkish-Ravioli.png"
+
+  },
+  {
+    "tr": "Mercimek Çorbası",
+    "en": "Ventil Soup",
+    "price": "₺100",
+    "image": "Ventil-Soup.png"
+
+  },
+  {
+    "tr": "",
+    "en": "",
+    "price": "₺66",
+    "image": ".png"
+  },
+  {
+    "tr": "",
+    "en": "",
+    "price": "",
+    "image": ""
+  },
+  {
+    "tr": "",
+    "en": "",
+    "price": "",
+    "image": ""
+  },
+  {
+    "tr": "",
+    "en": "",
+    "price": "",
+    "image": ""
+  }
+
+]
