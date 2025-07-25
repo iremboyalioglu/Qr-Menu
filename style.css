@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #fffdf7;
+  background: #afaeaa;
   margin: 0;
   padding: 20px;
 }
@@ -46,4 +46,25 @@ h1 {
   font-weight: bold;
   font-size: 16px;
   color: #000;
+}
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.category-button {
+  padding: 8px 16px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.category-button:hover,
+.category-button.active {
+  background-color: #333;
+  color: white;
 }

@@ -3,100 +3,80 @@
     "tr": "2 Kisilik Turk Kahvaltisi",
     "en": "Turkish Breakfast for 2 Persons",
     "price": "₺90",
-    "image": "Turkish-Breakfast-for-2-Persons.png"
+    "image": "Turkish-Breakfast-for-2-Persons.png",
+    "category":"kahvaltı"
   },
   {
     "tr": "Ingiliz Kahvaltisi",
     "en": "English Breakfast",
     "price": "₺100",
-    "image": "English-Breakfast.png"
+    "image": "English-Breakfast.png",
+    "category":"kahvaltı"
   },
   {
     "tr": "Tavuklu Wrap",
     "en": "Chicken Wrap",
     "price": "₺100",
-    "image": "Chicken-Wrap.png"
-
+    "image": "Chicken-Wrap.png",
+    "category":"wrap"
   },
   {
     "tr": "Karışık Kumru",
     "en": "Mixed Kumru",
     "price": "₺100",
-    "image": "Mixed-Kumru.png"
-
+    "image": "Mixed-Kumru.png",
+    "category":"kumru"
   },
   {
     "tr": "Karışık Pizza",
     "en": "Mixed-Pizza",
     "price": "₺100",
-    "image": "Mixed-Pizza.png"
-
+    "image": "Mixed-Pizza.png",  
+    "category":"pizza"
   },
   {
     "tr": "Omlet Çeşitleri",
     "en": "Omelet Varieties",
     "price": "₺100",
-    "image": "Omelet-Varieties.png"
-
-  },
-  {
-    "tr": "Domuz Sosis",
-    "en": "Pork Sausage",
-    "price": "₺100",
-    "image": "Pork-Sausage.png"
-
+    "image": "Omelet-Varieties.png", 
+    "category":"omlet"
   },
   {
     "tr": "Tost Çeşitleri",
     "en": "Toast Varieties",
     "price": "₺100",
-    "image": "Toast-Varieties.png"
-
+    "image": "Toast-Varieties.png",
+    "category":"tost"
   },
   {
     "tr": "Domates Çorbası",
     "en": "Tomato Soup",
     "price": "₺100",
-    "image": "Tomato-Soup.png"
-
+    "image": "Tomato-Soup.png",
+    "category":"çorba"
   },
   {
     "tr": "Mantı",
     "en": "Turkish Ravioli",
     "price": "₺100",
-    "image": "Turkish-Ravioli.png"
-
+    "image": "Turkish-Ravioli.png",
+    "category":"ana yemek"
   },
   {
     "tr": "Mercimek Çorbası",
     "en": "Ventil Soup",
     "price": "₺100",
-    "image": "Ventil-Soup.png"
-
+    "image": "Ventil-Soup.png",
+    "category":"çorba"
   },
   {
     "tr": "",
     "en": "",
     "price": "₺66",
     "image": ".png"
-  },
-  {
-    "tr": "",
-    "en": "",
-    "price": "",
-    "image": ""
-  },
-  {
-    "tr": "",
-    "en": "",
-    "price": "",
-    "image": ""
-  },
-  {
-    "tr": "",
-    "en": "",
-    "price": "",
-    "image": ""
   }
+  
+  
+  
 
 ]
