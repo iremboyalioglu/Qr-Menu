@@ -58,12 +58,26 @@ function renderSubcategoryButtons() {
   });
 }
 
+// Türkçe karakterleri normalize eden fonksiyon
+function normalize(str) {
+  return str
+    .toLowerCase()
+    .replace(/ş/g, 's')
+    .replace(/ı/g, 'i')
+    .replace(/ç/g, 'c')
+    .replace(/ğ/g, 'g')
+    .replace(/ü/g, 'u')
+    .replace(/ö/g, 'o')
+    .replace(/İ/g, 'i')
+    .trim();
+}
+
 // Arama inputu her değiştiğinde çalışır
 searchInput.addEventListener("input", filterAndRender);
 
 // Filtreleme ve menü öğelerini render etme
 function filterAndRender() {
-  const keyword = searchInput.value.toLowerCase();
+  const keyword = normalize(searchInput.value);
   let filtered = menuData;
 
   if (selectedCategory) {
@@ -77,11 +91,11 @@ function filterAndRender() {
   }
 
   if (keyword) {
-    filtered = filtered.filter(
-      (item) =>
-        item.tr.toLowerCase().includes(keyword) ||
-        item.en.toLowerCase().includes(keyword)
-    );
+    filtered = filtered.filter((item) => {
+      const tr = item.tr ? normalize(item.tr) : "";
+      const en = item.en ? normalize(item.en) : "";
+      return tr.includes(keyword) || en.includes(keyword);
+    });
   }
 
   renderMenuItems(filtered);
