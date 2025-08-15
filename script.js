@@ -1,43 +1,108 @@
-// data.json dosyasını çek ve menüyü oluştur
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    const menuDiv = document.getElementById('menu');
-    const categoryDiv = document.getElementById('category-container');
+// script.js
 
-    const categories = [...new Set(data.map(item => item.category))];
-    categories.unshift("All");
+// Global değişkenler
+let menuData = [];
+let selectedCategory = null;
+let selectedSubcategory = null;
 
-    categories.forEach(cat => {
-      const btn = document.createElement('button');
-      btn.textContent = cat;
-      btn.className = 'category-button';
-      if (cat === "All") btn.classList.add("active");
-      btn.addEventListener('click', () => {
-        document.querySelectorAll(".category-button").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        showMenu(cat === "All" ? data : data.filter(i => i.category === cat));
-      });
-      categoryDiv.appendChild(btn);
-    });
+// DOM öğelerini seç
+const categoryContainer = document.getElementById("category-buttons");
+const subcategoryContainer = document.getElementById("subcategory-buttons");
+const menuContainer = document.getElementById("menu-container");
+const searchInput = document.getElementById("search");
 
-    function showMenu(items) {
-      menuDiv.innerHTML = '';
-      items.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'menu-item';
-        card.innerHTML = `
-          <img src="images/${item.image}" alt="${item.tr}">
-          <div class="info">
-            <h3>${item.tr}</h3>
-            <p>${item.en}</p>
-          </div>
-          <div class="price">${item.price}</div>
-        `;
-        menuDiv.appendChild(card);
-      });
-    }
+// Başlangıçta veri yükle
+fetch("data.json")
+  .then((res) => res.json())
+  .then((data) => {
+    menuData = data;
+    renderCategoryButtons();
+    renderMenuItems(menuData);
+  });
 
-    showMenu(data);
-  })
-  .catch(err => console.error('Veri yükleme hatası:', err));
+// Ana kategori butonlarını oluştur
+function renderCategoryButtons() {
+  const categories = [...new Set(menuData.map((item) => item.category))];
+  categoryContainer.innerHTML = "";
+  categories.forEach((category) => {
+    const btn = document.createElement("button");
+    btn.textContent = category;
+    btn.onclick = () => {
+      selectedCategory = category;
+      selectedSubcategory = null;
+      renderSubcategoryButtons();
+      filterAndRender();
+    };
+    categoryContainer.appendChild(btn);
+  });
+}
+
+// Alt kategori butonlarını oluştur
+function renderSubcategoryButtons() {
+  const subcategories = [
+    ...new Set(
+      menuData
+        .filter((item) => item.category === selectedCategory)
+        .map((item) => item.subcategory)
+    ),
+  ];
+  subcategoryContainer.innerHTML = "";
+  subcategories.forEach((subcategory) => {
+    const btn = document.createElement("button");
+    btn.textContent = subcategory;
+    btn.onclick = () => {
+      selectedSubcategory = subcategory;
+      filterAndRender();
+    };
+    subcategoryContainer.appendChild(btn);
+  });
+}
+
+// Arama inputu her değiştiğinde çalışır
+searchInput.addEventListener("input", filterAndRender);
+
+// Filtreleme ve menü öğelerini render etme
+function filterAndRender() {
+  const keyword = searchInput.value.toLowerCase();
+  let filtered = menuData;
+
+  if (selectedCategory) {
+    filtered = filtered.filter((item) => item.category === selectedCategory);
+  }
+
+  if (selectedSubcategory) {
+    filtered = filtered.filter(
+      (item) => item.subcategory === selectedSubcategory
+    );
+  }
+
+  if (keyword) {
+    filtered = filtered.filter(
+      (item) =>
+        item.tr.toLowerCase().includes(keyword) ||
+        item.en.toLowerCase().includes(keyword)
+    );
+  }
+
+  renderMenuItems(filtered);
+}
+
+// Menü öğelerini kart olarak render et
+function renderMenuItems(items) {
+  menuContainer.innerHTML = "";
+  items.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "menu-card fade-in";
+
+    card.innerHTML = `
+      <img src="images/${item.image}" alt="${item.tr}" />
+      <div class="menu-info">
+        <strong>${item.tr}</strong><br />
+        <em>${item.en}</em>
+      </div>
+      <div class="price">${item.price}</div>
+    `;
+
+    menuContainer.appendChild(card);
+  });
+}

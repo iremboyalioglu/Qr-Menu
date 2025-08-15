@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Restaurant Menü</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Menu</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Restaurant Menü</h1>
-  <div id="category-container" class="category-container"></div>
-  <div id="menu" class="menu-list"></div>
+
+  <!-- Arama kutusu -->
+  <input type="text" id="search" placeholder="Search menu...">
+
+  <!-- Ana kategori butonları -->
+  <div id="category-buttons" class="button-group"></div>
+
+  <!-- Alt kategori butonları -->
+  <div id="subcategory-buttons" class="button-group"></div>
+
+  <!-- Menü öğeleri buraya gelecek -->
+  <div id="menu-container" class="menu-grid"></div>
+
+  <!-- Script dosyasını çağır -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     "price": "₺90",
     "image": "Turkish-Breakfast-for-2-Persons.png",
     "category": "Breakfast",
-    "subcategory": "Two Person"
+    "subcategory": "Breakfast plate"
   },
   {
     "tr": "İngiliz Kahvaltısı",
@@ -13,7 +13,7 @@
     "price": "₺100",
     "image": "English-Breakfast.png",
     "category": "Breakfast",
-    "subcategory": "English"
+    "subcategory": "Breakfast plate"
   },
   {
     "tr": "Mantı",
