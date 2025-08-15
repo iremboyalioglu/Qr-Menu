@@ -1,82 +1,146 @@
 [
   {
-    "tr": "2 Kisilik Turk Kahvaltisi",
+    "tr": "2 Kişilik Türk Kahvaltısı",
     "en": "Turkish Breakfast for 2 Persons",
     "price": "₺90",
     "image": "Turkish-Breakfast-for-2-Persons.png",
-    "category":"kahvaltı"
+    "category": "Breakfast",
+    "subcategory": "Two Person"
   },
   {
-    "tr": "Ingiliz Kahvaltisi",
+    "tr": "İngiliz Kahvaltısı",
     "en": "English Breakfast",
     "price": "₺100",
     "image": "English-Breakfast.png",
-    "category":"kahvaltı"
-  },
-  {
-    "tr": "Tavuklu Wrap",
-    "en": "Chicken Wrap",
-    "price": "₺100",
-    "image": "Chicken-Wrap.png",
-    "category":"wrap"
-  },
-  {
-    "tr": "Karışık Kumru",
-    "en": "Mixed Kumru",
-    "price": "₺100",
-    "image": "Mixed-Kumru.png",
-    "category":"kumru"
-  },
-  {
-    "tr": "Karışık Pizza",
-    "en": "Mixed-Pizza",
-    "price": "₺100",
-    "image": "Mixed-Pizza.png",  
-    "category":"pizza"
-  },
-  {
-    "tr": "Omlet Çeşitleri",
-    "en": "Omelet Varieties",
-    "price": "₺100",
-    "image": "Omelet-Varieties.png", 
-    "category":"omlet"
-  },
-  {
-    "tr": "Tost Çeşitleri",
-    "en": "Toast Varieties",
-    "price": "₺100",
-    "image": "Toast-Varieties.png",
-    "category":"tost"
-  },
-  {
-    "tr": "Domates Çorbası",
-    "en": "Tomato Soup",
-    "price": "₺100",
-    "image": "Tomato-Soup.png",
-    "category":"çorba"
+    "category": "Breakfast",
+    "subcategory": "English"
   },
   {
     "tr": "Mantı",
     "en": "Turkish Ravioli",
     "price": "₺100",
     "image": "Turkish-Ravioli.png",
-    "category":"ana yemek"
+    "category": "Main Dishes",
+    "subcategory": "Pasta"
+  },
+  {
+    "tr": "Domates Çorbası",
+    "en": "Tomato Soup",
+    "price": "₺100",
+    "image": "Tomato-Soup.png",
+    "category": "Appetisers",
+    "subcategory": "Soups"
   },
   {
     "tr": "Mercimek Çorbası",
-    "en": "Ventil Soup",
+    "en": "Lentil Soup",
     "price": "₺100",
     "image": "Ventil-Soup.png",
-    "category":"çorba"
+    "category": "Appetisers",
+    "subcategory": "Soups"
   },
   {
-    "tr": "",
-    "en": "",
-    "price": "₺66",
-    "image": ".png"
+    "tr": "Tavuk Fajita",
+    "en": "Chicken Fajita",
+    "price": "₺150",
+    "image": "chicken-fajita.png",
+    "category": "Main Dishes",
+    "subcategory": "Fajitas"
+  },
+  {
+    "tr": "Dana Steak",
+    "en": "Beef Steak",
+    "price": "₺200",
+    "image": "beef-steak.png",
+    "category": "Main Dishes",
+    "subcategory": "Steak"
+  },
+  {
+    "tr": "Mevsim Salata",
+    "en": "Seasonal Salad",
+    "price": "₺60",
+    "image": "seasonal-salad.png",
+    "category": "Salads",
+    "subcategory": "Seasonal"
+  },
+  {
+    "tr": "Zeytinyağlı Enginar",
+    "en": "Artichoke with Olive Oil",
+    "price": "₺70",
+    "image": "artichoke-oliveoil.png",
+    "category": "Mezes",
+    "subcategory": "Cold Mezes"
+  },
+  {
+    "tr": "Tavuklu Wrap",
+    "en": "Chicken Wrap",
+    "price": "₺100",
+    "image": "Chicken-Wrap.png",
+    "category": "Main Dishes",
+    "subcategory": "Wraps"
+  },
+  {
+    "tr": "Karışık Kumru",
+    "en": "Mixed Kumru",
+    "price": "₺100",
+    "image": "Mixed-Kumru.png",
+    "category": "Main Dishes",
+    "subcategory": "Sandwiches"
+  },
+  {
+    "tr": "Karışık Pizza",
+    "en": "Mixed Pizza",
+    "price": "₺100",
+    "image": "Mixed-Pizza.png",
+    "category": "Main Dishes",
+    "subcategory": "Pizza"
+  },
+  {
+    "tr": "Omlet Çeşitleri",
+    "en": "Omelet Varieties",
+    "price": "₺100",
+    "image": "Omelet-Varieties.png",
+    "category": "Breakfast",
+    "subcategory": "Omelets"
+  },
+  {
+    "tr": "Domuz Pirzola",
+    "en": "Pork Chops",
+    "price": "₺160",
+    "image": "Pork-Chops.png",
+    "category": "Main Dishes",
+    "subcategory": "Pork"
+  },
+  {
+    "tr": "Domuz Sosis",
+    "en": "Pork Sausage",
+    "price": "₺140",
+    "image": "Pork-Sausage.png",
+    "category": "Main Dishes",
+    "subcategory": "Pork"
+  },
+  {
+    "tr": "Tost Çeşitleri",
+    "en": "Toast Varieties",
+    "price": "₺100",
+    "image": "Toast-Varieties.png",
+    "category": "Breakfast",
+    "subcategory": "Toasts"
+  },
+  {
+    "tr": "Kırmızı Şarap",
+    "en": "Red Wine",
+    "price": "₺120",
+    "image": "red-wine.png",
+    "category": "Alcohol Drinks",
+    "subcategory": "Wine"
+  },
+  {
+    "tr": "Beyaz Şarap",
+    "en": "White Wine",
+    "price": "₺120",
+    "image": "white-wine.png",
+    "category": "Alcohol Drinks",
+    "subcategory": "Wine"
   }
-  
-  
-  
-
 ]
